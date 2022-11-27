@@ -7,8 +7,8 @@ var transporter=nodemailer.createTransport({
     port:'587',
     secure:false,
     auth: {
-        user:'sa151097akhter@gmail.com',
-        pass:'jyrmbfpeqklyrdzh'
+        user:'sender email ID',
+        pass:'password'
     }
 });
 
@@ -19,7 +19,7 @@ var Ohtml=`<h1 style="text-align:center;">Node Mailer API</h1>
             Email: ${email}<br> `;
 
 var mailOptions = {
-    from: ' "Node Mailer API" <sa151097akhter@gmail.com>',
+    from: ' "Node Mailer API" <sender email ID>',
     to: email,
     subject: 'Registration Successful',
     html: Ohtml
